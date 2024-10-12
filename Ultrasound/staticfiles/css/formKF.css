@@ -28,9 +28,10 @@ form {
 
 label {
     text-align: left;
-    color: #a8a8a8;
+    color: hsl(0, 5%, 4%);
     text-shadow: 1px 1px 0 white;
-  }
+    margin-left: 1em;
+  } 
 
 form input, form select,
 form textarea {
@@ -41,7 +42,7 @@ form textarea {
   -webkit-border-radius: 8px;
   border-radius: 8px;
   display: block;
-  width: 100%;
+  width: 80%;
   margin-bottom: 3em;
   margin-top: 1em;
   font-family: "Merriweather", sans-serif;
@@ -58,15 +59,20 @@ form textarea:focus {
 }
 form #input-submit {
   color: white;
-  background: #e74c3c;
+  background: hsla(19, 44%, 45%, 0.801);
+  border: hsla(19, 44%, 45%, 0.801);
   cursor: pointer;
   margin-top: 5em;
+  margin-left:10%;
+  width: 50%;
 }
 form #input-submit:hover {
+  background-color: brown;
   -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
   -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
   box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
 }
+
 form textarea {
   height: 100px;
 }

@@ -973,3 +973,291 @@ Watching for file changes with StatReloader
 No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
 No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+NumExpr defaulting to 4 threads.
+Watching for file changes with StatReloader
+NumExpr defaulting to 4 threads.
+NumExpr defaulting to 4 threads.
+Internal Server Error: /predict-from-kidney-features/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 86, in predictFromKidneyFeatures
+    model= joblib.load('static/model/logit.joblib')
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 587, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 506, in _unpickle
+    obj = unpickler.load()
+  File "/usr/local/lib/python3.10/pickle.py", line 1213, in load
+    dispatch[key[0]](self)
+KeyError: 0
+Internal Server Error: /predict-from-kidney-features/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 86, in predictFromKidneyFeatures
+    model= joblib.load('static/model/logit.joblib')
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 587, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 506, in _unpickle
+    obj = unpickler.load()
+  File "/usr/local/lib/python3.10/pickle.py", line 1213, in load
+    dispatch[key[0]](self)
+KeyError: 0
+Internal Server Error: /predict-from-kidney-features/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 86, in predictFromKidneyFeatures
+    model= joblib.load('static/model/logit.joblib')
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 587, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 506, in _unpickle
+    obj = unpickler.load()
+  File "/usr/local/lib/python3.10/pickle.py", line 1213, in load
+    dispatch[key[0]](self)
+KeyError: 0
+No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+NumExpr defaulting to 4 threads.
+Error running WSGI application
+ImportError: cannot import name 'joblib' from 'sklearn.externals' (/usr/local/lib/python3.10/site-packages/sklearn/externals/__init__.py)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/wsgi.py", line 132, in __call__
+    response = self.get_response(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 139, in response_for_exception
+    response = handle_uncaught_exception(
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 183, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 710, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/urls.py", line 19, in <module>
+    from . import views
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 4, in <module>
+    from sklearn.externals import joblib
+Error running WSGI application
+ImportError: cannot import name 'joblib' from 'sklearn.externals' (/usr/local/lib/python3.10/site-packages/sklearn/externals/__init__.py)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/wsgi.py", line 132, in __call__
+    response = self.get_response(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 139, in response_for_exception
+    response = handle_uncaught_exception(
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 183, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 710, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/urls.py", line 19, in <module>
+    from . import views
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 4, in <module>
+    from sklearn.externals import joblib
+Error running WSGI application
+ImportError: cannot import name 'joblib' from 'sklearn.externals' (/usr/local/lib/python3.10/site-packages/sklearn/externals/__init__.py)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/wsgi.py", line 132, in __call__
+    response = self.get_response(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 139, in response_for_exception
+    response = handle_uncaught_exception(
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 183, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 710, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/urls.py", line 19, in <module>
+    from . import views
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 4, in <module>
+    from sklearn.externals import joblib
+Error running WSGI application
+ImportError: cannot import name 'joblib' from 'sklearn.externals' (/usr/local/lib/python3.10/site-packages/sklearn/externals/__init__.py)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/wsgi.py", line 132, in __call__
+    response = self.get_response(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 139, in response_for_exception
+    response = handle_uncaught_exception(
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 183, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 710, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/urls.py", line 19, in <module>
+    from . import views
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 4, in <module>
+    from sklearn.externals import joblib
+Error running WSGI application
+ImportError: cannot import name 'joblib' from 'sklearn.externals' (/usr/local/lib/python3.10/site-packages/sklearn/externals/__init__.py)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/wsgi.py", line 132, in __call__
+    response = self.get_response(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 139, in response_for_exception
+    response = handle_uncaught_exception(
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 183, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 710, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/urls.py", line 19, in <module>
+    from . import views
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 4, in <module>
+    from sklearn.externals import joblib
+Error running WSGI application
+ImportError: cannot import name 'joblib' from 'sklearn.externals' (/usr/local/lib/python3.10/site-packages/sklearn/externals/__init__.py)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/wsgi.py", line 132, in __call__
+    response = self.get_response(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 139, in response_for_exception
+    response = handle_uncaught_exception(
+
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 183, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 710, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 689, in urlconf_module
+    return import_module(self.urlconf_name)
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/urls.py", line 19, in <module>
+    from . import views
+
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 4, in <module>
+    from sklearn.externals import joblib
+Internal Server Error: /predict-from-kidney-features/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 86, in predictFromKidneyFeatures
+    model= joblib.load('static/model/logit.joblib')
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 587, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 506, in _unpickle
+    obj = unpickler.load()
+  File "/usr/local/lib/python3.10/pickle.py", line 1213, in load
+    dispatch[key[0]](self)
+KeyError: 0
+Internal Server Error: /predict-from-kidney-features/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 86, in predictFromKidneyFeatures
+    model= joblib.load('static/model/logit.joblib')
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 587, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 506, in _unpickle
+    obj = unpickler.load()
+  File "/usr/local/lib/python3.10/pickle.py", line 1213, in load
+    dispatch[key[0]](self)
+KeyError: 0
+Internal Server Error: /predict-from-kidney-features/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/cyrillengwem/Ultrasound-APP/Ultrasound/Ultrasound/views.py", line 86, in predictFromKidneyFeatures
+    model= joblib.load('static/model/logit.joblib')
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 587, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+  File "/usr/local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 506, in _unpickle
+    obj = unpickler.load()
+  File "/usr/local/lib/python3.10/pickle.py", line 1213, in load
+    dispatch[key[0]](self)
+KeyError: 0
+NumExpr defaulting to 4 threads.
+/home/cyrillengwem/.local/lib/python3.10/site-packages/sklearn/base.py:376: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.2.2 when using version 1.5.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+No training configuration found in the save file, so the model was *not* compiled. Compile it manually.

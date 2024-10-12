@@ -71,20 +71,20 @@ def predictFromKidneyFeatures(request):
         GlycemieAleatoire = request.POST.get('GlycemieAleatoire')
         Albumine = request.POST.get('Albumine')
         #NoteMedicale = request.POST.get('NoteMedicale')
-        
+
        # Enrégistrer les données
 
        # Créer un DataFrame avec les données du patient
         data = pd.DataFrame({
-           "albumine" :[Albumine] , "créatinine sérique":[CreatinineSerique], "urée sanguine" :[UreeSanguine], 
+           "albumine" :[Albumine] , "créatinine sérique":[CreatinineSerique], "urée sanguine" :[UreeSanguine],
            "tension artérielle": [TensionArterielle],  " gravité spécifique":[GraviteSpecifique], "glycémie aléatoire": [GlycemieAleatoire] ,
            "age": [Age], "diabète sucré_Oui": [TypeDiabete], "hypertension_Oui" : [Hypertension]
           })
-       
-      
+
+
         # Charger le modèle de machine learning pour la prédiction
         model= joblib.load('static/model/logit.joblib')
-       
+
         # Prediction
         y_predict = model.predict(data)
         y_predict = float(y_predict)
@@ -92,7 +92,7 @@ def predictFromKidneyFeatures(request):
             result = "the patient is at risk of renal failure"
         else:
             result = "the patient presents no risk of renal failure"
-        
+
         # Retourner la réponse au format JSON
         return JsonResponse({'prediction': result})
     else:
